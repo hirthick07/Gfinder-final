@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Serif+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 12%;
+
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 15% 20%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+
+    --accent: 224 76% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 15% 12%;
+    --sidebar-primary: 224 76% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 220 15% 20%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 224 76% 48%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(224 76% 48%), hsl(224 76% 55%));
+    --warm-shadow: 0 4px 24px -4px hsl(224 76% 48% / 0.15);
+    --card-shadow: 0 2px 12px -2px hsl(220 15% 12% / 0.08);
+    --card-hover-shadow: 0 8px 30px -6px hsl(220 15% 12% / 0.15);
+  }
+
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 220 14% 92%;
+    --card: 220 15% 11%;
+    --card-foreground: 220 14% 92%;
+    --popover: 220 15% 11%;
+    --popover-foreground: 220 14% 92%;
+    --primary: 224 76% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 12% 15%;
+    --secondary-foreground: 220 14% 85%;
+    --muted: 220 10% 18%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 224 76% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 224 76% 55%;
+    --sidebar-background: 220 15% 8%;
+    --sidebar-foreground: 220 14% 92%;
+    --sidebar-primary: 224 76% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 12% 15%;
+    --sidebar-accent-foreground: 220 14% 85%;
+    --sidebar-border: 220 10% 20%;
+    --sidebar-ring: 224 76% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
+
+  .card-hover-shadow {
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  .warm-shadow {
+    box-shadow: var(--warm-shadow);
+  }
+}
