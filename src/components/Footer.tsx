@@ -4,13 +4,13 @@ const Footer = () => {
   return (
     <footer
       className="mt-auto text-white"
-      style={{ background: "linear-gradient(135deg, #0f2060 0%, #1a3a8f 100%)" }}
+      style={{ background: "#094FB7" }}
     >
       <div className="container mx-auto px-6 py-10">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <img
-              src="/footer-logo.png"
+              src="/logo-white.png"
               alt="GFinder"
               style={{ height: 44, width: "auto" }}
             />
