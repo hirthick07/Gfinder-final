@@ -60,13 +60,14 @@ const HowItWorks = () => {
 
   return (
     <div className="min-h-screen">
+    <img src="/header.png" alt="header" className="w-full h-auto absolute top-0 left-0 z-[-1]" />
       {/* Hero */}
-      <section className="relative overflow-hidden bg-muted py-16 md:py-20">
+      <section className="relative overflow-hidden py-16 md:py-20">
         <div className="container mx-auto px-4 text-center">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-4 inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary"
+            className="mb-4 inline-block rounded-full border border-white/30 text-white px-4 py-1.5 text-sm font-medium"
           >
             Simple &amp; Effective
           </motion.span>
@@ -74,7 +75,7 @@ const HowItWorks = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="mx-auto mb-4 max-w-2xl text-4xl text-foreground md:text-5xl"
+            className="mx-auto mb-4 max-w-2xl text-4xl text-foreground md:text-5xl text-white"
           >
             How It Works
           </motion.h1>
@@ -82,7 +83,7 @@ const HowItWorks = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="mx-auto max-w-xl text-lg text-muted-foreground"
+            className="mx-auto max-w-xl text-lg text-muted-foreground text-white w-[400px]"
           >
             Three Simple Steps To Report, Search, And Recover Lost Belongings
           </motion.p>
@@ -280,14 +281,14 @@ const HowItWorks = () => {
       {/* CTA — card overlaps white-to-blue diagonal transition */}
       <div
         className="relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #1a3a8f 0%, #1e40af 100%)" }}
+        style={{ background: "#094FB7" }}
       >
         {/* White triangle covers the top-left */}
         <div
           className="absolute top-0 left-0 w-full h-full pointer-events-none"
           style={{
-            background: "white",
-            clipPath: "polygon(0 0, 58% 0, 28% 100%, 0 100%)",
+            background: "#FBFBFC",
+            clipPath: "polygon(0 0, 100% 0, 0 100%, 0 100%)",
             zIndex: 0,
           }}
         />
