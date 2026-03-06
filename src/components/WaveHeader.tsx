@@ -5,7 +5,7 @@
 const WaveHeader = () => {
   return (
     <div
-      className="relative overflow-hidden -mt-3"
+      className="relative overflow-hidden -mt-3 top-[-72px]"
       style={{ background: "linear-gradient(135deg, #1a3a8f 0%, #2d52cc 60%, #3b5fe0 100%)" }}
     >
       <div className="h-36" />
