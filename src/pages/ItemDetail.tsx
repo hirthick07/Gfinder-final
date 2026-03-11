@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import WaveHeader from "@/components/WaveHeader";
 import { openWhatsAppChat } from "@/lib/whatsapp";
+import { Alert } from "@/components/ui/alert";
 
 interface DbItem {
   id: string;
@@ -257,15 +258,6 @@ const ItemDetail = () => {
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-white font-semibold text-sm transition-all hover:opacity-90"
-                    style={{ background: "linear-gradient(135deg,#2d52cc,#1a3a8f)" }}
-                  >
-                    <Send className="h-4 w-4" />
-                    Send
-                  </button>
-
                   {item?.owner_phone && (
                     <button
                       type="button"
@@ -277,6 +269,14 @@ const ItemDetail = () => {
                       {isWhatsAppDisabled ? `WhatsApp (${whatsAppCooldown}s)` : "Send via WhatsApp"}
                     </button>
                   )}
+
+                  <button
+                    type="submit"
+                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-white font-semibold text-sm transition-all hover:opacity-90"
+                    style={{ background: "red" }}
+                  >
+                    Report this item
+                  </button>
                 </form>
               </div>
             </div>
