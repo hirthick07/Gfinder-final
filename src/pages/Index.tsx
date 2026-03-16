@@ -152,7 +152,7 @@ const Index = () => {
                 className="mb-3"
                 style={{
                   fontFamily: "'Caveat', cursive",
-                  fontSize: "1.35rem",
+                  fontSize: "1.7rem",
                   color: "#faee1c",
                   fontStyle: "italic",
                   letterSpacing: "0.02em",
@@ -161,7 +161,7 @@ const Index = () => {
                 நம்ம Campus Students காண !!
               </p>
               <h1
-                className="mb-5 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl"
+                className="mb-5 text-6xl font-bold leading-tight md:text-5xl lg:text-6xl"
                 style={{ color: "#faee1c" }}
               >
                 Lost Something?
@@ -371,7 +371,7 @@ const Index = () => {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&auto=format&fit=crop&q=80"
+                  src="/home1.png"
                   alt="Person reporting lost item"
                   className="w-full h-full object-cover"
                 />
@@ -476,7 +476,7 @@ const Index = () => {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=700&auto=format&fit=crop&q=80"
+                  src="/home2.png"
                   alt="Students browsing listings"
                   className="w-full h-full object-cover"
                 />
@@ -558,7 +558,7 @@ const Index = () => {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=700&auto=format&fit=crop&q=80"
+                  src="/home3.png"
                   alt="Person recovering item"
                   className="w-full h-full object-cover"
                 />
